@@ -1,9 +1,9 @@
 export default class RenderingField {
   constructor() {
-    let fields = [];
+    const fields = [];
     const gameField = document.querySelector('.game-field');
-    for (let i = 0; i < 16; i++) {
-      let field = document.createElement('div');
+    for (let i = 0; i < 16; i += 1) {
+      const field = document.createElement('div');
       fields[i] = gameField.appendChild(field);
       fields[i].classList.add('field');
     }
